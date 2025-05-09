@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="noindex,noarchive, nofollow" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png"> 
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+<header>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="library.html">Library</a>
+</nav>
+
+<main>
+    <a href="add-book.html" title="Add new books to your library to keep track of your reading">Add Book</a>
+    <a href="edit-book.html" title="Edit the details of your books to update them">Edit Book</a>
+
+    <h1>EDIT BOOK</h1>
+    <form id="editBookForm">
+        <input type="text" id="editTitle" placeholder="Title" required><br>
+        <input type="text" id="editAuthor" placeholder="Author" required><br>
+        <input type="radio" id="completed" name="readingStatus" value="Completed"> Completed
+        <input type="radio" id="currentlyReading" name="readingStatus" value="Currently Reading"> Currently Reading
+        <input type="radio" id="toBeRead" name="readingStatus" value="To Be Read"> To Be Read
+        <button type="submit">Update Book</button>
+        <button type="button" id="deleteButton">Delete Book</button>
+        <button onclick="location.href='library.html'">Exit</button>
+    </form>
+</main>
+    <script src="edit-book.js"></script>
+<footer>
+    &copy; Prachi Patel
+</footer>
+</body>
+</html>

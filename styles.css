@@ -1,0 +1,122 @@
+:root {
+    --LightBeige: #d6c8b6;
+    --LighterBeige: #f6f3ef;
+    --custom-embellishment-name:;
+  }
+  
+    /*  ----- Page layout blocks -----  */
+    header {
+        background: url(images/oldbooks.jpg);
+        padding:0.5%;
+        height: 325px;
+        text-align: left;
+    }
+  
+    nav {
+        display: flex;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--LightBeige);
+        height: 50px;
+    }
+  
+    nav a {
+        background-color: var(--LighterBeige);
+        border-radius:5px;
+        padding:0.3% 1%;
+        text-decoration: none;
+        margin: 0 10px;
+        color: black;
+    }
+  
+    main {
+        padding: 20px;
+    }
+
+    a {
+        background-color: var(--LighterBeige);
+        border-radius:5px;
+        padding:0.3% 1%;
+        text-decoration: none;
+        margin: 0 10px;
+        color: black;
+    }
+  
+    /* --------- Classes ---------*/
+    .book-cover {
+        width: 150px;
+        height: auto;
+    }
+  
+    .figure-text-container {
+        display: flex;
+        align-items: flex-start; /* Align items at the top */
+        gap: 20px;               /* Space between image and text */
+        max-width: 900px;     /* Limit width for better layout */
+        margin: 0 auto;       
+      }
+  
+    .side-text {
+        max-width: 400px;        /* limit width of text */
+    }
+  
+    .front-page-container {
+        background-color: var(--LighterBeige);
+        border-radius: 5px;
+        margin: 50px 50px;
+        padding: 2% 10%;
+    }
+  
+    /*   ===== TABLET  media query overrides mobile styles ===== */
+    @media all and (min-width: 600px) {}
+    
+    /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+    @media all and (min-width: 1080px) {}
+    
+    /*   ===== PRINT  media query overrides previous styles =====  */
+    @media print {}
+  
+  
+  
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        margin: 0;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      form {
+        margin: 0 auto 20px auto;
+        max-width: 400px;
+      }
+      
+      form input,
+      form textarea,
+      form button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      
+      .library {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      
+      .book {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 8px;
+        background: #f9f9f9;
+      }
+      
+      .book h3 {
+        margin-top: 0;
+      }
+  
